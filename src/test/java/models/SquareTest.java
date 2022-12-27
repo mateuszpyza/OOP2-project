@@ -1,12 +1,12 @@
 package models;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class SquareTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void shouldGetArea() {
         //given
         Square square = new Square(2);
@@ -16,7 +16,7 @@ class SquareTest {
         Assertions.assertEquals(result, 4);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void shouldGetPerimeter() {
         //given
         Square square = new Square(2);
