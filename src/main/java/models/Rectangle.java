@@ -1,20 +1,22 @@
 package models;
 
-public class Rectangle extends Square {
-    private final double lengthSecondSide;
+public class Rectangle extends Shape {
+    private final double a;
+    private final double b;
 
-    public Rectangle(double lengthFirstSide , double lengthSecondSide) {
-        super(lengthFirstSide);
-        this.lengthSecondSide = lengthSecondSide;
+    public Rectangle(double a, double b) {
+
+        this.a = a;
+        this.b = b;
     }
 
     @Override
     public double getArea() {
-        return lengthFirstSide * lengthSecondSide;
+        return a * b;
     }
 
     @Override
     public double getPerimeter() {
-        return 2 * lengthFirstSide + 2 * lengthSecondSide;
+        return 2 * a + 2 * b;
     }
 }

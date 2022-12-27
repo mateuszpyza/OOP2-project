@@ -1,20 +1,20 @@
 package models;
 
-public class Square extends Shape {
-
-    protected final double lengthFirstSide;
+public class Square extends Rectangle {
 
     public Square(double a) {
-        this.lengthFirstSide = a;
+        super(a, a);
     }
 
     @Override
     public double getArea() {
-        return Math.pow(lengthFirstSide, 2);
+        return super.getArea();
     }
 
     @Override
     public double getPerimeter() {
-        return 4 * lengthFirstSide;
+
+        return super.getPerimeter();
     }
+
 }

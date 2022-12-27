@@ -1,12 +1,12 @@
 package models;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class CircleTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void shouldGetArea() {
         //given
         Circle circle = new Circle(2);
@@ -16,7 +16,7 @@ class CircleTest {
         Assertions.assertEquals(circle.getArea(), result);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void shouldGetPerimeter() {
         //given
         Circle circle = new Circle(2);
